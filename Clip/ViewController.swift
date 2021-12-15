@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  Clip
 //
-//  Created by Nisala on 12/14/21.
-//
 
 import Cocoa
 

@@ -11,6 +11,9 @@
 		F4DF312727693F4200B081AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF312627693F4200B081AE /* ViewController.swift */; };
 		F4DF312927693F4400B081AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DF312827693F4400B081AE /* Assets.xcassets */; };
 		F4DF312C27693F4400B081AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DF312A27693F4400B081AE /* Main.storyboard */; };
+		F4DF313427693F7500B081AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF313327693F7500B081AE /* ContentView.swift */; };
+		F4DF31362769401400B081AE /* Clipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF31352769401400B081AE /* Clipper.swift */; };
+		F4DF31392769441D00B081AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DF31382769441D00B081AE /* AVFoundation.framework */; platformFilter = maccatalyst; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		F4DF312827693F4400B081AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DF312B27693F4400B081AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4DF312D27693F4400B081AE /* Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clip.entitlements; sourceTree = "<group>"; };
+		F4DF313327693F7500B081AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4DF31352769401400B081AE /* Clipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipper.swift; sourceTree = "<group>"; };
+		F4DF31382769441D00B081AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DF31392769441D00B081AE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,7 @@
 			children = (
 				F4DF312327693F4200B081AE /* Clip */,
 				F4DF312227693F4200B081AE /* Products */,
+				F4DF31372769441C00B081AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +65,18 @@
 				F4DF312827693F4400B081AE /* Assets.xcassets */,
 				F4DF312A27693F4400B081AE /* Main.storyboard */,
 				F4DF312D27693F4400B081AE /* Clip.entitlements */,
+				F4DF313327693F7500B081AE /* ContentView.swift */,
+				F4DF31352769401400B081AE /* Clipper.swift */,
 			);
 			path = Clip;
+			sourceTree = "<group>";
+		};
+		F4DF31372769441C00B081AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF31382769441D00B081AE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +151,8 @@
 			files = (
 				F4DF312727693F4200B081AE /* ViewController.swift in Sources */,
 				F4DF312527693F4200B081AE /* AppDelegate.swift in Sources */,
+				F4DF313427693F7500B081AE /* ContentView.swift in Sources */,
+				F4DF31362769401400B081AE /* Clipper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +299,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For clipping, duh :)";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +327,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For clipping, duh :)";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

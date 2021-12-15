@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "content_cut_black_24dp.svg",
+      "idiom" : "mac"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
