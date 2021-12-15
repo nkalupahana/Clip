@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4937F13276992AF00B6624E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F4DF312127693F4200B081AE /* Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DF312427693F4200B081AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4DF312627693F4200B081AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		F4DF312327693F4200B081AE /* Clip */ = {
 			isa = PBXGroup;
 			children = (
+				F4937F13276992AF00B6624E /* Info.plist */,
 				F4DF312427693F4200B081AE /* AppDelegate.swift */,
 				F4DF312627693F4200B081AE /* ViewController.swift */,
 				F4DF312827693F4400B081AE /* Assets.xcassets */,
@@ -297,6 +299,7 @@
 				DEVELOPMENT_TEAM = FC733RM99L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clip/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For clipping, duh :)";
@@ -325,6 +328,7 @@
 				DEVELOPMENT_TEAM = FC733RM99L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clip/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For clipping, duh :)";
