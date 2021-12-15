@@ -4,6 +4,7 @@
 //
 
 import SwiftUI
+import LaunchAtLogin
 
 struct ContentView: View {
     let delegate = NSApplication.shared.delegate as! AppDelegate
@@ -12,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack (alignment: .center, spacing: 20) {
             Stepper("Seconds to clip: \(Int(quantity))", value: $quantity, in: 1...120)
+            LaunchAtLogin.Toggle()
             Button(
                 action: {
                     delegate.clipper.openClipDir()
